@@ -43,33 +43,24 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Tipos de Dados - Exercícios Float <h2>
+                <h2> Tipos de Dados - Arrays <h2>
                 <div class="code">
                     <?php
-                       echo "<h3> Escrevendo un numero e verificando se é Float</h3>";
+                       $a = [1,2,3,4,5,6];
+                       $arr = ["Diego", 12, true];
+                       print_r ($a); 
+                       print_r($arr);
                        echo "<br>";
                        echo "<br>";
-                       $n1 = 2.2;
-                       if(is_float($n1)) {
-                        echo "Numero 1 = $n1 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 1 = $n1 não é um numero float.<br><br>";
-                    }
-                       $n2 = 55.8;
-                       if(is_float($n2)) {
-                        echo "Numero 1 = $n2 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 2 = $n2 não é um numero float.<br><br>";
-                    }
-                       $n3 = 4;
-                       if(is_float($n3)) {
-                        echo "Numero 3 = $n3 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 3 = $n3 não é um numero float.<br><br>";
-                    }  
+                       echo "O Comando Echo não imprime array mas sim seus indices <br><br>";               
+                       echo "<br>";
+                       echo $a[0];
+                       echo "<br>";
+                       echo $a[3];
+                       echo "<br>";
+                       echo $a[5];
 
-                       
-                     ?>
+                    ?>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Tipo de Dados</title>
+    <title>Tipos de Dados</title>
     <style>
     
     .container{
@@ -43,26 +43,27 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Tipos de Dados - Checando Float <h2>
+                <h2> Tipos de Dados - Checando String <h2>
                 <div class="code">
                     <?php
-                       $a = "teste";
-                       $b = 12.8;
-                       
-                       if(is_float($a)){
-                           echo "$a É um numero Float <br> <br>";
-                       }else {
-                           echo "$a Não é um float.<br> <br>";
+                       echo "Olá estou utilizando if e else.<br>";
+                       echo "<br>";                       
+                       $a = "Diego Moedano";
+                       if(is_string($a)){
+                           echo "$a : Isto é uma string<br><br>";
+                       }else{
+                           echo "$a : Não é uma string<br><br>";
                        }
-                    
-                       
-                       if(is_float($b)){
-                        echo "$b É um numero Float";
-                    }else {
-                        echo "$b Não é um float.";
-                    }
-                       
-                     ?>
+
+                       $b = 12;
+                       if(is_string($b)){
+                           echo "$b : Isto é uma string";
+                       }else{
+                           echo "$b : Não é uma string";
+                       }
+
+
+                    ?>
                 </div>
             </div>
         </div>

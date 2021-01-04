@@ -43,33 +43,25 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Tipos de Dados - Exercícios Float <h2>
+                <h2> Tipos de Dados - Checando Booleanos <h2>
                 <div class="code">
                     <?php
-                       echo "<h3> Escrevendo un numero e verificando se é Float</h3>";
-                       echo "<br>";
-                       echo "<br>";
-                       $n1 = 2.2;
-                       if(is_float($n1)) {
-                        echo "Numero 1 = $n1 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 1 = $n1 não é um numero float.<br><br>";
-                    }
-                       $n2 = 55.8;
-                       if(is_float($n2)) {
-                        echo "Numero 1 = $n2 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 2 = $n2 não é um numero float.<br><br>";
-                    }
-                       $n3 = 4;
-                       if(is_float($n3)) {
-                        echo "Numero 3 = $n3 é um numero float.<br><br>";
-                    }else {
-                        echo "Numero 3 = $n3 não é um numero float.<br><br>";
-                    }  
+                     $a = true;
+                     if(is_bool($a)){
+                         echo "É um booleano<br>";
+                     }
 
-                       
-                     ?>
+                     $b = false;
+                     if(is_bool($b)){
+                         echo "É um booleano<br>";
+                     }
+
+                     if(0 == false){
+                         echo "0 é considerado false <br>";
+                     }
+
+
+                    ?>
                 </div>
             </div>
         </div>

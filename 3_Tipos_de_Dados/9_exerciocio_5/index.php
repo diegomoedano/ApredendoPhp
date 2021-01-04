@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Tipo de Dados</title>
+    <title>Tipos de Dados</title>
     <style>
     
     .container{
@@ -43,26 +43,15 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Tipos de Dados - Checando Float <h2>
+                <h2> Tipos de Dados - Exercício String <h2>
                 <div class="code">
                     <?php
-                       $a = "teste";
-                       $b = 12.8;
-                       
-                       if(is_float($a)){
-                           echo "$a É um numero Float <br> <br>";
-                       }else {
-                           echo "$a Não é um float.<br> <br>";
-                       }
-                    
-                       
-                       if(is_float($b)){
-                        echo "$b É um numero Float";
-                    }else {
-                        echo "$b Não é um float.";
-                    }
-                       
-                     ?>
+                        echo "Exercicio:um texto de aspas duplas <br>";
+                        echo "Exercicio:um texto de aspas simples <br>";
+                        echo "Exercicio: um texto com aspas duplas e simples<br>";
+                        
+                        
+                    ?>
                 </div>
             </div>
         </div>
