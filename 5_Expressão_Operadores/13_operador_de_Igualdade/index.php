@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,21 +43,25 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador de Igualdade <h2>
                 <div class="code">
                     <?php
+                    echo "Igualdade '==' <br><br>";
+                    $a = 5; $b = 5;
+                    $c = "Diego"; $d = "Diego";
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    if($a == $b){
+                        echo "Comparação verdadeira de variaveis com números <br><br>";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+
+                    
+                    if($c == $d){
+                        echo "As string nas variáveis são identicas.";
+                    }
+
+
 
                     ?>
-
                 </div>
             </div>
         </div>

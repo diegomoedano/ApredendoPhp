@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -18,8 +18,8 @@
     }
     .centro{
         margin: 0 auto;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: auto;
         background: #fff;
         padding: 5px;
         color: 000;
@@ -43,21 +43,29 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador Conversão Cast . <h2>
                 <div class="code">
-                    <?php
+                    <?php                               
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    $a = (int) "12";
+                    echo $a . "<br>";
+                    echo $a + 12 ."<br>";
+
+                    if($a === 12){
+                        echo "A é idêntico a 12 <br>";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                    
+                    $b = (float) "13.14";
+                    echo $b . "<br>";
+                    echo $b + 12 ."<br>";
+
+                    if($b === 13.14){
+                        echo "A é idêntico a 12 <br>";
+                    }
+                    
+
 
                     ?>
-
                 </div>
             </div>
         </div>

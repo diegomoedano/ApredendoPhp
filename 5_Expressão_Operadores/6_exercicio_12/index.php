@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,32 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Exercício 12 <h2>
                 <div class="code">
                     <?php
-
-                    function soma($a,$b){
-                        echo $a + $b;                            
+                        echo "Criando varias operações basicas imprimindo cada etapa em variaveis diferentes <br>";
                         echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+
+                        $num1 = 5;
+                        $num2 = 2;
+
+                        $soma = $num1 + $num2;
+                        $sub = $num1 - $num2;
+                        $div = $num1 / $num2;
+                        $mult = $num1 * $num2;
+
+                        echo $soma . "<br>";
+                        echo $sub . "<br>";
+                        echo $div . "<br>";
+                        echo $mult;
+                        
+
+
+
+
+
+
+                 
 
                     ?>
 

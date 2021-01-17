@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,32 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador de Exponenciação <h2>
                 <div class="code">
                     <?php
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
+                    echo "Concatena com '.'";
+                    echo"<br><br>";
+
+                    $nome = "Diego";
+                    $sobrenome = "Moedano";
+
+                    echo "Nome " . $nome . " e Sobrenome " . $sobrenome;
+                    echo"<br><br>";
+                    $marca = "Ferrari";
+                    $motor = "3.0";
+                    $vel_max = 200;
+                    echo "O Carro da " . $marca . " tem um motor " . $motor . " e sua velociadade maxima é de " . $vel_max . "km/h";
+
+
                        
+                       
+                       
+                        
+
+
+                        
+                 
 
                     ?>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,28 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Mudança de Tipo implícito <h2>
                 <div class="code">
                     <?php
+                       echo 5 / 2;
+                       echo "<br>";
+                       if(is_float(5/2)){
+                            echo "Inteiro mudando para Float";
+                       }
+                       echo "<br><br>";
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                       echo 5 . 2;
+                       echo "<br>";
+                       if(is_string(5 . 2)){
+                           echo "Inteiro mudando para String";
+                       }
+                       echo "<br><br>";
+
+                       $nome = "Diego";
+                       $sobrenome = "Moedano";
+                       echo "Concatenando duas string com   . <br>";
+                       echo $nome . " " . $sobrenome;
+
 
                     ?>
 

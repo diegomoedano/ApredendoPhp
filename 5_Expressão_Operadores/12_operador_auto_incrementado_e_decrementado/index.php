@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,21 +43,22 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Auto incrementação ou decremento <h2>
                 <div class="code">
                     <?php
+                    $x = 0;
+                    $y = 0;
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                    echo "Incremenando a variavel X que é igual $x. <br>";
+                    $x++;
+                    echo "X incrementado: $x ";
+                    
+                    echo "<br><br>";
 
+                    echo "Decrementando a variavel Y que é igual $y.<br>";
+                    $y--;
+                    echo "Y Decremetado: $y ";    
                     ?>
-
                 </div>
             </div>
         </div>

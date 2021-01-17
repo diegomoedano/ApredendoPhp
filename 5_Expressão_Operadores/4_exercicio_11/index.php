@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,16 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Exercício 11 <h2>
                 <div class="code">
                     <?php
-
-                    function soma($a,$b){
-                        echo $a + $b;                            
+                        echo "teste a expressão '5' * 12 utilize a função gettype";
                         echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                    $x = "5" * 12;
+                    echo $x;
+                    echo "<br><br>";
+                    echo gettype($x);
+
 
                     ?>
 

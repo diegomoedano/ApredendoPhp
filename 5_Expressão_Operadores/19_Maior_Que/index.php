@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -18,8 +18,8 @@
     }
     .centro{
         margin: 0 auto;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: auto;
         background: #fff;
         padding: 5px;
         color: 000;
@@ -43,21 +43,35 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador Maior e Maior Igual a Que. <h2>
                 <div class="code">
                     <?php
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    echo "Operador Maior que '>' <br><br>";
+
+                    $a = 32;
+                    $b = 28;
+                    if ($a > $b) {
+                        echo "$a é maior que $b <br><br>";
+                    }else {
+                        echo "$a não é maior que $b<br><br>";
+                    }                
+
+                    echo "Operador Maior igual que '>=' <br><br>";
+                    
+                    $c = 28;
+                    $d = 28;
+                    if ($c >= $d) {
+                        echo "$c é maior ou igual que $d <br><br>";
+                    }else {
+                        echo "$c não é maior ou igual que $d";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+
+                    
+                  
+
 
                     ?>
-
                 </div>
             </div>
         </div>

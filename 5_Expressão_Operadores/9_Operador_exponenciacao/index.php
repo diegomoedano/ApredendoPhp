@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,27 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador de Exponenciação <h2>
                 <div class="code">
                     <?php
+                        echo 5 ** 2;
+                        echo "<br>";
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
+                        $a = 7;
+                        $b = 12;
+                        echo $a ** $b;
+                        echo '<br>';
+
+                        $c = $b ** $a;
+                        echo $c;
+
                        
+                       
+                        
+
+
+                        
+                 
 
                     ?>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -18,8 +18,8 @@
     }
     .centro{
         margin: 0 auto;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: auto;
         background: #fff;
         padding: 5px;
         color: 000;
@@ -43,21 +43,34 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador AND "E" "&&". <h2>
                 <div class="code">
                     <?php
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    echo "Operador AND '&&' <br><br>";
+
+                    $a = 5;
+                    $b = 12;
+                    $c = 18;
+                    if ($a < $b && $c > $b){
+                        echo "As duas operações são verdadeiras $a < $b e $c > $b";
+                    }else {
+                        echo "Uma ou as duas operações não é verdadeira $a < $b e $c > $b";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                     
+                    echo "<br><br>";
+
+                    if ($a > $b && $c > $b){
+                        echo "As duas operações são verdadeiras $a > $b e $c > $b";
+                    }else {
+                        echo "Uma ou as duas operações não é verdadeira $a > $b e $c > $b";
+                    }
+
+
+
+
 
                     ?>
-
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -18,8 +18,8 @@
     }
     .centro{
         margin: 0 auto;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: auto;
         background: #fff;
         padding: 5px;
         color: 000;
@@ -43,21 +43,28 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador Ternário ? Condição : Condição <h2>
                 <div class="code">
-                    <?php
+                    <?php                               
+                   
+                   echo 20 > 10 ? "Deu True <br>" : "Deu False <br>";
+                   echo 20 < 10 ? "Deu True <br>" : "Deu False <br>";
+                   $a = 5;
+                   $b = 8;
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                   echo $a > $b ? "Deu True <br>" : "Deu False <br>";
+                   echo $a < $b ? "Deu True <br>" : "Deu False <br>";
+
+                   echo $a === $b && 10 > 5 ? "Deu True <br>" : "Deu False <br>";
+
+
+
+
+
+                                     
+
 
                     ?>
-
                 </div>
             </div>
         </div>

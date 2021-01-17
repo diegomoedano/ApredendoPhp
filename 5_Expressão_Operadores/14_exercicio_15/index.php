@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,21 +43,30 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Exercicio 15 <h2>
                 <div class="code">
                     <?php
+                    $n1 = 12;
+                    $n2 = 12;
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    if($n1 == $n2){
+                        echo "Os numero das variaveis são iguais.";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+                    echo "<br><br>";
+                    $senha = "ads123";
+                    $valida = "Simão";
+
+                    if ($senha == $valida){
+                        echo "Senha Correta";
+                    }else {
+                        echo $senha . " senha Não valida.";
+                    }
+
+
+
+
 
                     ?>
-
                 </div>
             </div>
         </div>

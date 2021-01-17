@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,18 +43,25 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2>Operadores Aritiméticos <h2>
                 <div class="code">
                     <?php
-
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
-                    }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
+                       echo "Soma 10 + 5<br>";
+                       $soma = 10 + 5 . "<br>";
+                       echo $soma . "<br>";
                        
+                       echo "Subtração 10 - 5<br>";
+                       $sub = 10 - 5 . "<br>";
+                       echo $sub . "<br>";
+
+                       echo "Divisão 10 / 5<br>";
+                       $div = 10 / 5 . "<br>";
+                       echo $div . "<br>";
+                       
+                       echo "Multiplicação 10 * 5<br>";
+                       $mult = 10 * 5 . "<br>";
+                       echo $mult . "<br>";
+
 
                     ?>
 

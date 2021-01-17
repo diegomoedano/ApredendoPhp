@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
-    <title>Variáveis</title>
+    <title>Expressão e Operadores</title>
     <style>
     
     .container{
@@ -43,21 +43,36 @@
     <div class="container">
         <div class="centro">
            <div class="titulo">
-                <h2> Variável - Escopo Parametros de Função<h2>
+                <h2> Operador não identicos <h2>
                 <div class="code">
                     <?php
+                    echo "Operador de Não identicos '!=' <br><br>";
 
-                    function soma($a,$b){
-                        echo $a + $b;                            
-                        echo "<br><br>";
+                    $a = 5;
+                    $b = 6;
+                    echo "Variavel A = $a <br>";
+                    echo "Variavel B = $b <br>";
+
+                    if($a !== $b){
+                        echo "A é diferente de B";
+                    }else {
+                        echo "A e B não são diferentes";
                     }
-                    soma(10,2);
-                    soma(150,2);
-                    soma(20,2);
-                       
+
+                    echo "<br><br>";
+                    $c = 7;
+                    $d = "7";
+                    echo "Variavel C = $c <br>";
+                    echo "Variavel D string = $d <br>";
+
+                    if($c !== $d){
+                        echo "C é diferente de D";
+                    }else {
+                        echo "A e B não são diferentes";
+                    }
+
 
                     ?>
-
                 </div>
             </div>
         </div>
